@@ -1,0 +1,64 @@
+<form action="search.php" method="post" style="margin-top: 16px">
+<table class="centered">
+<caption style="font-weight:bold;">Enter the details of your search</caption>
+	<tr>
+		<td>Part of the world:</td>
+		<td>Country:</td>
+		<td>Region:</td>
+		<td>Location:</td>
+	</tr>
+	<tr>
+		<td>	
+		<select name="part_of_the_world" onchange="this.form.submit()">
+		<option value="*">All</option>
+		<?php // Print out the list from SQL
+		for ($i = 0; $i < count($part_of_the_world_list); $i++) {
+			print "<option value=\"$part_of_the_world_list[$i]\""; 
+			if (isset($_POST['part_of_the_world']) && $_POST['part_of_the_world'] == $part_of_the_world_list[$i]) { print "selected=\"selected\""; }
+			print ">$part_of_the_world_list[$i]</option>\n";
+		}?>
+		</select>
+		</td>
+		<td>
+		<select name="country" onchange="this.form.submit()">
+		<option value="*">All</option>
+		<?php // Print out the list from SQL
+		for ($i = 0; $i < count($country_list); $i++) {
+			print "<option value=\"$country_list[$i]\""; 
+			if (isset($_POST['country']) && $_POST['country'] == $country_list[$i]) { print "selected=\"selected\""; }
+			print ">$country_list[$i]</option>\n";
+		}?>
+		</select>
+		</td>
+		<td>
+		<select name="region" onchange="this.form.submit()">
+		<option value="*">All</option>
+		<?php // Print out the list from SQL
+		for ($i = 0; $i < count($region_list); $i++) {
+			print "<option value=\"$region_list[$i]\""; 
+			if (isset($_POST['region']) && $_POST['region'] == $region_list[$i]) { print "selected=\"selected\""; }
+			print ">$region_list[$i]</option>\n";
+		}?>
+		</select>
+		</td>
+		<td>
+		<select name="location" onchange="this.form.submit()">
+		<option value="*">All</option>
+		<?php // Print out the list from SQL
+		for ($i = 0; $i < count($location_list); $i++) {
+			print "<option value=\"$location_list[$i]\""; 
+			if (isset($_POST['location']) && $_POST['location'] == $location_list[$i]) { print "selected=\"selected\""; }
+			print ">$location_list[$i]</option>\n";
+		}?>
+		</select>
+		</td>
+	</tr>
+</table>
+</form>
+<div style="text-align:center;">
+<form action="search.php" method="post">
+<input type="submit" name="submit" value="Search for the dive center">
+<input type="hidden" name="search" value="search">
+</form>
+</div>
+

@@ -1,0 +1,24 @@
+<div style="margin-top:16px; text-align:center;">
+	<form action="analytics.php" method="post">
+		<p>Analyze the average price of 
+		<select name="course">
+			<option value="" selected disabled>Please select</option>
+			<option value="DSD_price">Discover Scuba Diving experience</option>
+			<option value="OWD_price">Open Water Diver course</option>
+			<option value="AOWD_price">Advanced Open Water Diver course</option>
+			<option value="Price_per_2_dives">2 dives package</option>
+			<option value="Price_per_10_dives">10 dives package</option>
+		</select>
+		by 
+		<select name="dimension">
+			<option value="" selected disabled>Please select</option>
+			<option value="Part_of_the_World">part of the world</option>
+			<option value="Country">country</option>
+			<option value="Region">region</option>
+			<option value="Location">location</option>
+		</select>
+		.
+		</p>
+		<p><input type="submit" name="submit" value="Go!"/></p>
+	</form>
+	</div>

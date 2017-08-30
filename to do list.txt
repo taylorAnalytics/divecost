@@ -1,0 +1,5 @@
+Sorting the results of the search:
+	Create searching buttons in the table headers
+	create a js function that will trigger the search
+		does this function need to have any parameters? can it be one function for all course types? should it somehow now which course it's sorting?
+		

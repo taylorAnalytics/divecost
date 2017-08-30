@@ -1,0 +1,77 @@
+table.centered {
+	width: 300px;
+	margin: 0 auto;
+}
+
+td.result {
+	text-align: center;
+	border: 1px dotted black;
+	padding: 0.25em;
+}
+
+td {
+	white-space:nowrap;
+}
+
+th.result {
+	border: 1px solid black;
+	background-color: #99D3DF;
+	padding: 0.25em;
+}
+
+table.result {
+	text-align: center;
+	border: 1px solid black;
+	border-collapse: collapse;
+	table-layout: auto;
+}
+
+header {
+	text-align: center;
+	background-color: #99D3DF;
+	padding: 1em;
+	width: 100%;
+}
+
+body {
+	background-color: #E9E9E9;
+}
+
+ul {
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float: right;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+a.button {
+	background-color:#99D3DF;
+	color: black;
+	padding: 1em;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+p.error {
+	color: red;
+	text-align: center;
+}
+
+a.sort {
+	display:inline;
+	text-decoration: none;
+}
+
